@@ -5,7 +5,7 @@ Am început realizarea proiectului pornind de la schema electrică oferită în 
 
 ## Arhitectură Generală a Sistemului
 
-![Diagrama Bloc](Images/diagrama.png)
+![Text alternativ](Images/diagrama.png)
 
 ## Descriere Generală
 
@@ -86,8 +86,9 @@ Modulul **ESP32-C6-WROOM-1-N8** este nucleul sistemului, facilitând comunicarea
 ### Estimare Totală în Modul Sleep:
 **< 100 µA** (cu ESP32 în deep sleep și periferice oprite)
 
-![Diagrama Bloc](Images/3d.png)
+![Text alternativ](Images/3d.png)
 
-![Diagrama Bloc](Images/pgb.png)
+![Text alternativ](Images/pgb.png)
+
 ---
 
