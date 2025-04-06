@@ -1,4 +1,4 @@
-# EBookReader
+## EBookReader
 
 Am început realizarea proiectului pornind de la schema electrică oferită în enunț. Am adăugat fiecare componentă din biblioteca sugerata și le-am conectat corespunzător, atribuindu-le etichete adecvate. După finalizarea conexiunilor, am rulat o verificare ERC pentru a identifica eventualele erori si am rezolvat marea majoritate. A rămas o singură eroare nerezolvată, deoarece Fusion nu a putut indica locația acesteia. După ce schema a fost finalizată, am trecut la partea de PCB. Am decupat placa conform dimensiunilor cerute folosind masuratorile oferite de Fusion. Cea mai mare provocare a fost identificarea și poziționarea corectă a componentelor pe PGB. După plasare, am realizat rutarea și am validat designul în funcție de regulile specificate în enunț. Pentru a elimina erorile, a fost necesară modificarea footprint-ului pentru anumite piese. În final, am realizat planul de masă atât pentru stratul superior, cât și pentru cel inferior.
 ---
@@ -15,38 +15,38 @@ Modulul **ESP32-C6-WROOM-1-N8** este nucleul sistemului, facilitând comunicarea
 
 ## Componente Hardware
 
-### 🧠 ESP32-C6
+###  ESP32-C6
 - Microcontroller cu procesor RISC-V
 - Conectivitate Wi-Fi 6 și Bluetooth LE
 - Interfețe: SPI, I2C, UART, GPIO
 - Tensiune de operare: 3.3V
 
-### 🔋 Sistem de Alimentare
+###  Sistem de Alimentare
 - **MCP73831** – controler de încărcare pentru baterii LiPo
 - **MAX17048** – fuel gauge pentru măsurarea nivelului de baterie și avertizare
 - **XC6220A331MR** – stabilizator de tensiune 3.3V LDO
 
-### 🌡️ Senzori & RTC
+###  Senzori & RTC
 - **BME688** – senzor multifuncțional: temperatură, umiditate, presiune și gaze VOC (I2C)
 - **DS3231SN** – ceas de timp real cu ieșire pentru alarmă și precizie ridicată (I2C)
 
-### 🖥️ Display & Stocare
+###  Display & Stocare
 - **E-paper Display** – consum extrem de redus, ideal pentru afișaj static
 - **W25Q512JVEIQ** – memorie externă de tip SPI Flash (64Mbit)
 - **Card SD (opțional)** – conectare prin magistrala SPI (comună cu alte periferice)
 
-### ⚡ Protecție și Conectivitate
+###  Protecție și Conectivitate
 - Protecție ESD pentru liniile USB (USBLC6)
 - Diode Schottky pentru protecție la supratensiune
 - Conector USB-C pentru alimentare și comunicație serială
 
-### 🔘 Interfață Utilizator
+###  Interfață Utilizator
 - Buton RESET pentru restart manual
 - LED pentru indicarea stării de încărcare
 
 ---
 
-## 🧩 Alocare Pini ESP32-C6
+##  Alocare Pini ESP32-C6
 
 | Componentă           | Pin ESP32 | Funcție            |
 |----------------------|-----------|--------------------|
@@ -86,8 +86,8 @@ Modulul **ESP32-C6-WROOM-1-N8** este nucleul sistemului, facilitând comunicarea
 ### Estimare Totală în Modul Sleep:
 **< 100 µA** (cu ESP32 în deep sleep și periferice oprite)
 
-![Diagrama Bloc](Images/3d.jfif)
+![Diagrama Bloc](Images/3d.png)
 
-![Diagrama Bloc](Images/pgb.jfif)
+![Diagrama Bloc](Images/pgb.png)
 ---
 
