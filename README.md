@@ -99,40 +99,6 @@ Modulul **ESP32-C6-WROOM-1-N8** este nucleul sistemului, facilitând comunicarea
 
 ---
 
-##  Alocare Pini ESP32-C6
-
-| Componentă           | Pin ESP32 | Funcție            |
-|----------------------|-----------|--------------------|
-| BME688 – SDA         | IO8       | I2C SDA            |
-| BME688 – SCL         | IO9       | I2C SCL            |
-| DS3231SN – INT       | IO10      | Interrupt RTC      |
-| W25Q512 – CS         | IO4       | SPI Flash CS       |
-| E-Paper – CS         | IO3       | SPI Display CS     |
-| SPI – CLK            | IO5       | SPI Clock          |
-| SPI – MOSI           | IO6       | SPI MOSI           |
-| SPI – MISO           | IO7       | SPI MISO           |
-| MAX17048 – ALERT     | IO11      | Fuel Gauge INT     |
-| Buton RESET          | IO0       | Boot / Reset       |
-| SD Card – CS (opt.)  | IO2       | SPI CS SD Card     |
-
-## Estimare Consum Electric – Componente
-
-| Componentă           | Curent Consum Tipic                        | Observații                                                   |
-|----------------------|--------------------------------------------|--------------------------------------------------------------|
-| **ESP32-C6**         | ~80 mA activ<br>~10 µA deep sleep          | Consumă mai mult în moduri Wi-Fi/BLE                         |
-| **BME688**           | ~2.1 mA                                    | Poate intra în mod sleep pentru economisire                  |
-| **DS3231SN**         | ~150 µA                                    | Consum redus în standby                                      |
-| **W25Q512JVEIQ**     | ~4 mA activ<br>~1 µA standby                | Consum redus când nu este accesat                            |
-| **E-paper Display**  | ~1 mA refresh<br>~0 µA static               | Consumă doar la schimbarea imaginii                          |
-| **MAX17048**         | ~50 µA                                     | Monitorizare continuă cu consum scăzut                       |
-| **MCP73831**         | ~500 µA standby<br>până la 500 mA încărcare| Depinde de starea bateriei și a sursei                       |
-| **XC6220 Regulator** | ~35 µA proprie<br>max 700 mA output        | Consum intern mic, eficiență ridicată                        |
-| **LED status**       | ~5–20 mA                                   | În funcție de rezistența de limitare                         |
-| **Buton RESET**      | 0 mA                                       | Nu consumă curent, este un contact                           |
-| **SD Card (opțional)** | ~30–100 mA                                | Depinde de operațiile efectuate și frecvența SPI             |
-
----
-
 ## Estimare Totală Consum în Funcționare Activă:
 **~120 – 200 mA** (fără SD Card)
 
