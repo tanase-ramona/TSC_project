@@ -22,6 +22,44 @@ Modulul **ESP32-C6-WROOM-1-N8** este nucleul sistemului, facilitând comunicarea
 - Interfețe: SPI, I2C, UART, GPIO
 - Tensiune de operare: 3.3V
 
+  ## Component List
+
+| Component     | Purchase Link                                                                                   | Datasheet Link                                                                                                         |
+|---------------|--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| **Buttons**   |                                                                                                  |                                                                                                                        |
+| BOOT_BUTTON   | [Link](https://ro.mouser.com/ProductDetail/Panasonic/EVQ-P7L01P)                                 | [PDF](https://componentsearchengine.com/Datasheets/2/EVQP7L01P.pdf)                                                    |
+| CHANGE_BUTTON | [Link](https://ro.mouser.com/ProductDetail/Panasonic/EVQ-P7L01P)                                 | [PDF](https://componentsearchengine.com/Datasheets/2/EVQP7L01P.pdf)                                                    |
+
+| **Capacitors**|                                                                                                  |                                                                                                                        |
+| C1            | [Link](https://ro.mouser.com/ProductDetail/YAGEO/CC0402MRX5R5BB106)                              | [PDF](https://componentsearchengine.com/Datasheets/2/CC0402MRX5R5BB106.pdf)                                           |
+| C1_BAT        | [Link](https://ro.mouser.com/ProductDetail/YAGEO/CC0402MRX5R5BB106)                              | [PDF](https://componentsearchengine.com/Datasheets/2/CC0402MRX5R5BB106.pdf)                                           |
+
+| **Diodes**    |                                                                                                  |                                                                                                                        |
+| D1            | [Link](https://ro.mouser.com/ProductDetail/STMicroelectronics/USBLC6-2SC6Y)                      | [PDF](https://ro.mouser.com/datasheet/2/389/usblc6_2sc6y-1852505.pdf)                                                  |
+| D2            | [Link](https://ro.mouser.com/ProductDetail/KYOCERA-AVX/SD0805S020S1R0)                           | [PDF](https://ro.mouser.com/datasheet/2/40/schottky-3165252.pdf)                                                       |
+
+| **EPD Capacitors** |                                                                                             |                                                                                                                        |
+| EPD_C1         | [Link](https://ro.mouser.com/ProductDetail/YAGEO/CC0402MRX5R5BB106)                             | [PDF](https://componentsearchengine.com/Datasheets/2/CC0402MRX5R5BB106.pdf)                                           |
+| EPD_C2         | [Link](https://ro.mouser.com/ProductDetail/YAGEO/CC0402MRX5R5BB106)                             | [PDF](https://componentsearchengine.com/Datasheets/2/CC0402MRX5R5BB106.pdf)                                           |
+
+| **ICs**       |                                                                                                  |                                                                                                                        |
+| IC1           | [Link](https://ro.mouser.com/ProductDetail/ROHM-Semiconductor/BD5229G-TR)                        | [PDF](https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/voltage_detector/bd52xxg-e.pdf)                 |
+| IC4           | [Link](https://ro.mouser.com/ProductDetail/Torex-Semiconductor/XC6220A331MR-G)                  | [PDF](https://ro.mouser.com/datasheet/2/760/xc6220-3371556.pdf)                                                        |
+
+| **Connectors**|                                                                                                  |                                                                                                                        |
+| J1            | [Link](https://ro.mouser.com/ProductDetail/Hirose-Connector/FH34SRJ-24S-0.5SH99)                 | [PDF](https://ro.mouser.com/datasheet/2/185/FH34SRJ_24S_0_5SH_99__CL0580_1255_6_99_2DDrawing_0-1615044.pdf)           |
+| J2            | [Link](https://ro.mouser.com/ProductDetail/GCT/USB4110-GF-A)                                     | [PDF](https://ro.mouser.com/datasheet/2/837/GCT_USB4110_Product_Drawing___20k_cycles-3455479.pdf)                    |
+
+| **Inductors** |                                                                                                  |                                                                                                                        |
+| L1            | [Link](https://ro.mouser.com/ProductDetail/Wurth-Elektronik/744043680)                           | [PDF](https://www.we-online.com/components/products/datasheet/744043680.pdf)                                           |
+
+| **Fuses**     |                                                                                                  |                                                                                                                        |
+| PFMF.050.1    | [Link](https://ro.mouser.com/ProductDetail/KEMET/VE1812K401R050)                                 | [PDF](https://ro.mouser.com/datasheet/2/447/KEM_V0003_VE-3316901.pdf)                                                  |
+
+| **Transistors**|                                                                                                 |                                                                                                                        |
+| Q1            | [Link](https://ro.mouser.com/ProductDetail/Diodes-Incorporated/DMG2305UX-7)                      | [PDF](https://www.diodes.com/assets/Datasheets/DMG2305UX.pdf)                                                          |
+
+
 ###  Sistem de Alimentare
 - **MCP73831** – controler de încărcare pentru baterii LiPo
 - **MAX17048** – fuel gauge pentru măsurarea nivelului de baterie și avertizare
