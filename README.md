@@ -6,7 +6,7 @@ Am început realizarea proiectului pornind de la schema electrică oferită în 
 
 ## Arhitectură Generală a Sistemului
 
-![Text alternativ](images/diagrama.png)
+![Text alternativ](images/diagrama_tsc.png)
 
 ## Descriere Generală
 
@@ -79,15 +79,6 @@ Modulul **ESP32-C6-WROOM-1-N8** este nucleul sistemului, facilitând comunicarea
 - **MAX17048** – fuel gauge pentru măsurarea nivelului de baterie și avertizare
 - **XC6220A331MR** – stabilizator de tensiune 3.3V LDO
 
-###  Senzori & RTC
-- **BME688** – senzor multifuncțional: temperatură, umiditate, presiune și gaze VOC (I2C)
-- **DS3231SN** – ceas de timp real cu ieșire pentru alarmă și precizie ridicată (I2C)
-
-###  Display & Stocare
-- **E-paper Display** – consum extrem de redus, ideal pentru afișaj static
-- **W25Q512JVEIQ** – memorie externă de tip SPI Flash (64Mbit)
-- **Card SD (opțional)** – conectare prin magistrala SPI (comună cu alte periferice)
-
 ###  Protecție și Conectivitate
 - Protecție ESD pentru liniile USB (USBLC6)
 - Diode Schottky pentru protecție la supratensiune
@@ -107,9 +98,13 @@ Modulul **ESP32-C6-WROOM-1-N8** este nucleul sistemului, facilitând comunicarea
 
 ---
 
-![Text alternativ](images/3d.png)
+![Text alternativ](images/3d_tsc.png)
 
-![Text alternativ](images/pgb.png)
+![Text alternativ](images/pgb_tsc.png)
+
+![Text alternativ](images/carcasa1.png)
+
+![Text alternativ](images/carcasa2.png)
 
 ---
 
