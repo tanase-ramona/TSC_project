@@ -2,7 +2,6 @@
 
 Am început realizarea proiectului pornind de la schema electrică oferită în enunț. Am adăugat fiecare componentă din biblioteca sugerata și le-am conectat corespunzător, atribuindu-le etichete adecvate. După finalizarea conexiunilor, am rulat o verificare ERC pentru a identifica eventualele erori si am rezolvat marea majoritate. A rămas o singură eroare nerezolvată, deoarece Fusion nu a putut indica locația acesteia. După ce schema a fost finalizată, am trecut la partea de PCB. Am decupat placa conform dimensiunilor cerute folosind masuratorile oferite de Fusion. Cea mai mare provocare a fost identificarea și poziționarea corectă a componentelor pe PGB. După plasare, am realizat rutarea și am validat designul în funcție de regulile specificate în enunț. Pentru a elimina erorile, a fost necesară modificarea footprint-ului pentru anumite piese. În final, am realizat planul de masă atât pentru stratul superior, cât și pentru cel inferior.
 
----
 
 ## Arhitectură Generală a Sistemului
 
@@ -12,7 +11,6 @@ Am început realizarea proiectului pornind de la schema electrică oferită în 
 
 Modulul **ESP32-C6-WROOM-1-N8** este nucleul sistemului, facilitând comunicarea cu toate celelalte periferice prin interfețe standard precum I2C, SPI și GPIO. Alimentarea este realizată printr-o baterie Li-Po, gestionată de un controler de încărcare dedicat și monitorizată constant cu ajutorul unui fuel gauge.
 
----
 
 ## Componente Hardware
 
@@ -88,7 +86,6 @@ Modulul **ESP32-C6-WROOM-1-N8** este nucleul sistemului, facilitând comunicarea
 - Buton RESET pentru restart manual
 - LED pentru indicarea stării de încărcare
 
----
 
 ## Estimare Totală Consum în Funcționare Activă:
 **~120 – 200 mA** (fără SD Card)
@@ -96,9 +93,8 @@ Modulul **ESP32-C6-WROOM-1-N8** este nucleul sistemului, facilitând comunicarea
 ## Estimare Totală în Modul Sleep:
 **< 100 µA** (cu ESP32 în deep sleep și periferice oprite)
 
----
 
-![Text alternativ](images/3d_tsc.png)
+![Text alternativ](images/3D_tsc.png)
 
 ![Text alternativ](images/pgb_tsc.png)
 
